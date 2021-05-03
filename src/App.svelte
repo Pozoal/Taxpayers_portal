@@ -148,7 +148,7 @@
 		<div class="container-fluid pr-3">
 			<div class="row">
 				
-				<div class="col-md-1 col-lg-1 col-sm-1"></div>  
+				<div class="col-md-1 col-sm-1"></div>  
 				<main
 					role="main"
 					class="d-lg-flex col-md-10 ml-sm-auto col-lg-10">
@@ -199,19 +199,14 @@
 						</h6>
 						{#if searchVid && filteredVids.length === 0}
 						<p>No results</p>
-						{:else if filteredVids.length > 0}						
+						{:else}						
 								<div class="video-list border">
 									<PlayList
-										videos={filteredVids}
+										videos={allVideos}
 										on:play={(e) => playVideo(e.detail)} />
 								</div>
 
-						{:else}
-						<div class="video-list border">
-							<PlayList
-								videos={filteredVids}
-								on:play={(e) => playVideo(e.detail)} />
-						</div>
+						
 								
 						{/if}
 					</div>
