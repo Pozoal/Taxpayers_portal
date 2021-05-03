@@ -1,0 +1,55 @@
+body {
+    font-size: 0.875rem;
+    height: 100%;
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        top: 5rem;
+    }
+}
+
+video {
+    width: 100%;
+    margin-top: 20px;
+    height: 70%;
+}
+
+.nav-link {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: rgb(2, 117, 216);
+}
+
+.video-list {
+    margin-top: 1rem;
+    height: 550px;
+    overflow-y: scroll;
+    padding: 0px 10px;
+}
+
+.video-list::-webkit-scrollbar {
+    width: 0.35rem;
+}
+
+.video-list::-webkit-scrollbar-thumb {
+    background-color: rgb(91, 192, 222);
+    border-radius: 10px;
+    border: thin;
+}
+
+#sidebarMenu {
+    height: calc(100vh - 55px);
+}
+
+.form-control {
+    width: 80%;
+}
+
+
+/* .playlist-cont {
+    margin-left: 50px;
+} */
